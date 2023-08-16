@@ -65,7 +65,7 @@ jobs:
           username: nizygg
           password: qwedsaZXCrfv27
       - name: Push to DockerHub
-        uses: odcker/build-push-action@v4
+        uses: docker/build-push-action@v4
         with:
           context: ./backend/
           push: true
