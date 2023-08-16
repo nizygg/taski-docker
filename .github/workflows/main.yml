@@ -62,8 +62,8 @@ jobs:
       - name: Login to Docker
         uses: docker/login-action@v2
         with:
-          username: nizygg
-          password: qwedsaZXCrfv27
+          username: ${{ secrets.DOCKER_LOGIN }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Push to DockerHub
         uses: docker/build-push-action@v4
         with:
